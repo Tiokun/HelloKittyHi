@@ -1,0 +1,16 @@
+High Priority : 
+Fix Triggerbot
+Fix Configs not Saving all Option(Skinchanger Wear, Quality etc)
+
+Medium Priority : 
+Add Inventory Changer
+Add Medal Changer
+Add Grenade Prediction
+
+Fix Website
+ -Add more Premium shit
+
+Low Priority :
+Fix NoSky 
+Fix Skybox Changer [In new maps]
+Test all Knife Skins
