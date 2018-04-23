@@ -663,15 +663,13 @@ namespace Client
 					ImGui::SameLine(SpaceLineTwo);
 					ImGui::Checkbox("World Grenade", &Settings::Esp::esp_WorldGrenade);
 					ImGui::SameLine(SpaceLineThr);
-
+					ImGui::Checkbox("Buy Logs", &Settings::Esp::esp_logs);
 
 					ImGui::Checkbox("Grenade Helper", &Settings::Esp::esp_ghelper); 
 					ImGui::SameLine(100, 0);
 					ImGui::SameLine();
 					if (ImGui::Button("Update Map"))
 						cGrenade.bUpdateGrenadeInfo(Interfaces::Engine()->GetLevelNameShort());
-
-					ImGui::Checkbox("ESP Logs", &Settings::Esp::esp_logs);
 
 					string visible_1 = "Enemy";
 					string visible_2 = "Team";

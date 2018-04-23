@@ -59,4 +59,3 @@ public:
 extern CGrenadeAPI cGrenade;
 
 #endif 
-

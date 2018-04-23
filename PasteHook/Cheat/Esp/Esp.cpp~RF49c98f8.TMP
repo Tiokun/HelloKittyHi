@@ -336,8 +336,8 @@ void CEsp::OnRender()
 				if (WorldToScreen((local->GetEyePosition() + vecAngles), vecAngles))
 					g_pRender->DrawFillBox(vecAngles.x, vecAngles.y, 7, 7, Color::Blue());
 
-					g_pRender->Text(W / 2 - 200, H / 2 , true, true, Color::White(), (char*)info.szName.c_str());
-					g_pRender->Text(W / 2 - 200, H / 2 + 15, true, true, Color::White(), (char*)info.szDescription.c_str());
+					g_pRender->Text(W / 2 - 10, H / 2 , true, true, Color::White(), (char*)info.szName.c_str());
+					g_pRender->Text(W / 2 - 10, H / 2 + 10, true, true, Color::White(), (char*)info.szDescription.c_str());
 			}
 			else
 			{

@@ -255,6 +255,9 @@ namespace Engine
 			if (pSample)
 				Client::OnPlaySound(pOrigin, pSample);
 
+			if (strstr(pSample, "null"))
+               iPitch = 256;
+
 			SoundTable.UnHook();
 
 			int ret = Interfaces::Sound()->EmitSound1(filter, iEntIndex, iChannel, pSoundEntry, nSoundEntryHash, pSample,

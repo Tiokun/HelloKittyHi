@@ -325,6 +325,7 @@ namespace Settings
 #define CVAR_ESP_BOMBTIMER "esp_BombTimer"
 #define CVAR_ESP_WORLDWEAPONS "esp_WorldWeapons"
 #define CVAR_ESP_WORLDGRENADE "esp_WorldGrenade"
+#define CVAR_ESP_LOGS "esp_logs"
 #define CVAR_ESP_GHELPER "esp_ghelper"
 
 #define CVAR_ESP_COLOR_CT "esp_Color_CT"
