@@ -222,8 +222,8 @@ namespace Settings
 	}
 }
 
-#define CHEAT_NAME "PasteHook - Counter-Strike: Global Offensive (BETA)"
-#define WATER_MARK "Welcome to PasteHook"
+#define CHEAT_NAME "LegitWare - Counter-Strike: Global Offensive (BETA)"
+#define WATER_MARK "Welcome to LegitWare"
 #define AIMBOT_TEXT "Aim"
 #define COLORS_TEXT "Colors"
 #define CONFIG_TEXT "Config"

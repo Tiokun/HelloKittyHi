@@ -662,6 +662,7 @@ void CEsp::OnDrawModelExecute( IMatRenderContext* ctx , const DrawModelState_t &
 				case 7: material = Interfaces::MaterialSystem()->FindMaterial("models/inventory_items/wildfire_gold/wildfire_gold_detail", TEXTURE_GROUP_OTHER); break; // Detailed Gold
 				}
 				Color color = Color(255, 255, 255, 255);
+
 				if (Settings::Esp::esp_ChamsVisible <= 2)
 				{
 					ForceMaterial(color, material);

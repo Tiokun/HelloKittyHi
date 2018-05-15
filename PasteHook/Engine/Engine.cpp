@@ -278,12 +278,12 @@ namespace Engine
 		}
 		case 2:
 		{
-			SetMyClanTag("PasteHook", "PasteHook");
+			SetMyClanTag("LegitWare", "LegitWare");
 			break;
 		}
 		case 3:
 		{
-			SetMyClanTag("PasteHook \r", "PasteHook only");
+			SetMyClanTag("LegitWare \r", "LegitWare only");
 			break;
 		}
 		case 4:
@@ -309,127 +309,97 @@ namespace Engine
 			{
 			case 0:
 			{
-				SetMyClanTag("", "PASTEHOOK");
+				SetMyClanTag("", "LegitWare");
 				break;
 			}
 			case 1:
 			{
-				SetMyClanTag("P", "PASTEHOOK");
+				SetMyClanTag("L", "LegitWare");
 				break;
 			}
 			case 2:
 			{
-				SetMyClanTag("Pa", "PASTEHOOK");
+				SetMyClanTag("Le", "LegitWare");
 				break;
 			}
 			case 3:
 			{
-				SetMyClanTag("Pas", "PASTEHOOK");
+				SetMyClanTag("Leg", "LegitWare");
 				break;
 			}
 			case 4:
 			{
-				SetMyClanTag("Past", "PASTEHOOK");
+				SetMyClanTag("Legi", "LegitWare");
 				break;
 			}
 			case 5:
 			{
-				SetMyClanTag("Paste", "PASTEHOOK");
+				SetMyClanTag("Legit", "LegitWare");
 				break;
 			}
 			case 6:
 			{
-				SetMyClanTag("PasteH", "PASTEHOOK");
+				SetMyClanTag("LegitW", "LegitWare");
 				break;
 			}
 			case 7:
 			{
-				SetMyClanTag("PasteHo", "PASTEHOOK");
+				SetMyClanTag("LegitWa", "LegitWare");
 				break;
 			}
 			case 8:
 			{
-				SetMyClanTag("PasteHoo", "PASTEHOOK");
+				SetMyClanTag("LegitWar", "LegitWare");
 				break;
 			}
 			case 9:
 			{
-				SetMyClanTag("PasteHook", "PASTEHOOK");
+				SetMyClanTag("LegitWare", "LegitWare");
 				break;
 			}
 			case 10:
 			{
-				SetMyClanTag("PasteHook.", "PASTEHOOK");
+				SetMyClanTag("LegitWar", "LegitWare");
 				break;
 			}
 			case 11:
 			{
-				SetMyClanTag("PasteHook.p", "PASTEHOOK");
+				SetMyClanTag("LegitWa", "LegitWare");
 				break;
 			}
 			case 12:
 			{
-				SetMyClanTag("PasteHook.pw", "PASTEHOOK");
+				SetMyClanTag("LegitW", "LegitWare");
 				break;
 			}
 			case 13:
 			{
-				SetMyClanTag("PasteHook.p", "PASTEHOOK");
+				SetMyClanTag("Legit", "LegitWare");
 				break;
 			}
 			case 14:
 			{
-				SetMyClanTag("PasteHook.", "PASTEHOOK");
+				SetMyClanTag("Legi", "LegitWare");
 				break;
 			}
 			case 15:
 			{
-				SetMyClanTag("PasteHook", "PASTEHOOK");
+				SetMyClanTag("Leg", "LegitWare");
 				break;
 			}
 			case 16:
 			{
-				SetMyClanTag("PasteHoo", "PASTEHOOK");
+				SetMyClanTag("Le", "LegitWare");
 				break;
 			}
 			case 17:
 			{
-				SetMyClanTag("PasteHo", "PASTEHOOK");
+				SetMyClanTag("L", "LegitWare");
 				break;
 			}
 			case 18:
 			{
-				SetMyClanTag("PasteH", "PASTEHOOK");
-				break;
-			}
-			case 19:
-			{
-				SetMyClanTag("Paste", "PASTEHOOK");
-				break;
-			}
-			case 20:
-			{
-				SetMyClanTag("Past", "PASTEHOOK");
-				break;
-			}
-			case 21:
-			{
-				SetMyClanTag("Pas", "PASTEHOOK");
-				break;
-			}
-			case 22:
-			{
-				SetMyClanTag("Pa", "PASTEHOOK");
-				break;
-			}
-			case 23:
-			{
-				SetMyClanTag("P", "PASTEHOOK");
-				break;
-			}
-			case 24:
-			{
-				SetMyClanTag("", "PASTEHOOK");
+				SetMyClanTag("", "LegitWare");
 				break;
 			}
 			}
@@ -440,7 +410,7 @@ namespace Engine
 	}
 	void ChatSpamRegular()
 	{
-		std::vector<std::string> chatspam = { "Wanna get my Skill? www.pastehook.pw" };
+		std::vector<std::string> chatspam = { "Wanna get my Skill? www.legitware.pw" };
 		static DWORD lastspammed = 0;
 		if (GetTickCount() - lastspammed > 800)
 		{

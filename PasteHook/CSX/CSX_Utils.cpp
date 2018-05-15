@@ -171,7 +171,7 @@ namespace CSX
 			HKEY rKey;
 			TCHAR Path[256] = {0};
 			DWORD RegetPath=sizeof(Path);
-			RegOpenKeyEx(HKEY_CURRENT_USER, "SOFTWARE\\PasteHook", NULL, KEY_QUERY_VALUE, &rKey);
+			RegOpenKeyEx(HKEY_CURRENT_USER, "SOFTWARE\\LegitWare", NULL, KEY_QUERY_VALUE, &rKey);
 			RegQueryValueEx(rKey,"path", NULL, NULL,(LPBYTE)&Path, &RegetPath);
 			return Path;
 			//[enc_string_disable /]

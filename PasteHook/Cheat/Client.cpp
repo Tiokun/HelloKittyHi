@@ -60,7 +60,7 @@ namespace Client
 	void RefreshConfigs()
 	{
 		ConfigList.clear();
-		string ConfigDir = "C:/PasteHook/*.ini";
+		string ConfigDir = "C:/LegitWare/*.ini";
 		SearchFiles(ConfigDir.c_str(), ReadConfigs, FALSE);
 	}
 
@@ -122,9 +122,9 @@ namespace Client
 		g_pInventoryChanger = new CInventoryChanger();
 		g_pInventoryChanger1 = new CInventoryChanger1();
 
-		CreateDirectoryW(L"C:\\PasteHook", NULL);
-		GuiFile = "C:/PasteHook/gui.ini";
-		IniFile = "C:/PasteHook/default.ini";
+		CreateDirectoryW(L"C:\\LegitWare", NULL);
+		GuiFile = "C:/LegitWare/gui.ini";
+		IniFile = "C:/LegitWare/default.ini";
 
 		g_pSkin->InitalizeSkins();
 
@@ -173,7 +173,7 @@ namespace Client
 			
 			if (Settings::Esp::esp_Watermark)
 			{
-				g_pRender->Text(2, 2, false, true, Color::PasteHook(), WATER_MARK);
+				g_pRender->Text(2, 2, false, true, Color::LegitWare(), WATER_MARK);
 			}
 
 			if (Settings::Esp::esp_Cheatbuild)
@@ -377,7 +377,7 @@ namespace Client
 
 			const char* tabNames[] = {
 				"A",	// Aim Tab
-//				"F",	// Trigger Tab
+              //"F",	// Trigger Tab
 				"D",	// Visuals
 				"G",	// Skin Tab
 				"E",	// Misc Tab	
@@ -1049,11 +1049,11 @@ namespace Client
 
 					string clan_1 = "None";
 					string clan_2 = "Clear";
-					string clan_3 = "PasteHook";
-					string clan_4 = "PasteHook No-name";
+					string clan_3 = "LegitWare";
+					string clan_4 = "LegitWare No-name";
 					string clan_5 = "Valve";
 					string clan_6 = "Valve No-name";
-					string clan_7 = "PasteHook Animation";
+					string clan_7 = "LegitWare Animation";
 					const char* items5[] = { clan_1.c_str() , clan_2.c_str() , clan_3.c_str() , clan_4.c_str() , clan_5.c_str() , clan_6.c_str() , clan_7.c_str() };
 					ImGui::Combo("Clan Changer", &Settings::Misc::misc_Clan, items5, IM_ARRAYSIZE(items5));
 					ImGui::Spacing();
@@ -1249,13 +1249,13 @@ namespace Client
 
 					if (ImGui::Button("Load Config"))
 					{
-						Settings::LoadSettings("C:/PasteHook/" + ConfigList[iConfigSelect]);
+						Settings::LoadSettings("C:/LegitWare/" + ConfigList[iConfigSelect]);
 						SendMMHello();
 					}
 					ImGui::SameLine();
 					if (ImGui::Button("Save Config"))
 					{
-						Settings::SaveSettings("C:/PasteHook/" + ConfigList[iConfigSelect]);
+						Settings::SaveSettings("C:/LegitWare/" + ConfigList[iConfigSelect]);
 					}
 					ImGui::SameLine();
 					if (ImGui::Button("Refresh Config List"))
@@ -1276,7 +1276,7 @@ namespace Client
 							ConfigFileName = "settings";
 						}
 
-						Settings::SaveSettings("C:/PasteHook/" + ConfigFileName + ".ini");
+						Settings::SaveSettings("C:/LegitWare/" + ConfigFileName + ".ini");
 						RefreshConfigs();
 					}
 					}
@@ -1326,6 +1326,8 @@ namespace Client
 
 		io.IniFilename = GuiFile.c_str();
 		font = io.Fonts->AddFontFromMemoryCompressedTTF(menutext_compressed_data, menutext_compressed_size, 12.f);
+
+
 		imgfont = io.Fonts->AddFontFromMemoryCompressedTTF(Pastehook_Regular_compressed_data, Pastehook_Regular_compressed_size, 32.f);
 
 		style.Alpha = 1.f;

@@ -157,7 +157,7 @@ namespace Engine
 					{
 						PlayerInfo killed_info = GetInfo(Interfaces::Engine()->GetPlayerForUserID(nDead));
 						PlayerInfo killer_info = GetInfo(Interfaces::Engine()->GetPlayerForUserID(nUserID));
-						std::string before = ("PasteHook - ");
+						std::string before = ("LegitWare - ");
 						std::string one = killed_info.m_szPlayerName;
 						std::string two = (" bought ");
 						std::string three = pEvent->GetString("weapon");
@@ -180,7 +180,7 @@ namespace Engine
 
 									PlayerInfo killed_info = GetInfo(Interfaces::Engine()->GetPlayerForUserID(nDead));
 									PlayerInfo killer_info = GetInfo(Interfaces::Engine()->GetPlayerForUserID(nUserID));
-									std::string before = ("PasteHook - ");
+									std::string before = ("LegitWare - ");
 									std::string two = ("Hit ");
 									std::string three = killed_info.m_szPlayerName;
 									std::string foura = " for ";
@@ -209,7 +209,7 @@ namespace Engine
 
 					ConVar* con_filter_text = Interfaces::GetConVar()->FindVar("con_filter_text");
 					*(float*)((DWORD)&con_filter_text->fnChangeCallback + 0xC) = NULL;
-					con_filter_text->SetValue("PasteHook - ");
+					con_filter_text->SetValue("LegitWare - ");
 				}
 				else
 				{
@@ -254,9 +254,6 @@ namespace Engine
 
 			if (pSample)
 				Client::OnPlaySound(pOrigin, pSample);
-
-			if (strstr(pSample, "null"))
-               iPitch = 256;
 
 			SoundTable.UnHook();
 

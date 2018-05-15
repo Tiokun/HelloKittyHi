@@ -167,7 +167,7 @@ namespace SDK
 		}
 
 		DEFCOLOR_SRC(Black, 0, 0, 0);
-		DEFCOLOR_SRC(PasteHook, 0, 94, 167);
+		DEFCOLOR_SRC(LegitWare, 0, 94, 167);
 		DEFCOLOR_SRC(White, 255, 255, 255);
 		DEFCOLOR_SRC(Red, 255, 0, 0);
 		DEFCOLOR_SRC(Green, 0, 255, 0);
